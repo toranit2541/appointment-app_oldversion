@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AppointmentController;
 use App\Http\Controllers\AdminController;
-
+use Illuminate\Support\Facades\Artisan;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,6 +14,14 @@ use App\Http\Controllers\AdminController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/run-artisan', function () {
+    Artisan::call('migrate', ['--force' => true]);
+    Artisan::call('config:cache');
+    Artisan::call('route:cache');
+    Artisan::call('cache:clear');
+    return "Commands executed successfully!";
+});
 
 // Appointments routes
 Route::prefix('appointments')->name('appointments.')->group(function () {
