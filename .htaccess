@@ -17,5 +17,5 @@
 
     # Redirect www to non-www (if applicable)
     RewriteCond %{HTTP_HOST} ^www\.pt\.ruamchai-hos\.net$ [NC]
-    RewriteRule ^(.*)$ https://pt.ruamchai-hos.net/$1 [L,R=301]
+    RewriteRule ^(.*)$ https://pt.ruamchai-hos.net/appointments [L,R=301]
 </IfModule>
