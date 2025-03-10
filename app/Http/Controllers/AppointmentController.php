@@ -78,7 +78,7 @@ class AppointmentController extends Controller
         $events = [];
         foreach ($appointments as $appointment) {
             $events[] = [
-                'title' => $appointment->first_name . ' ' . $appointment->last_name,
+                // 'title' => $appointment->first_name . ' ' . $appointment->last_name,
                 'start' => $appointment->appointment_date,
             ];
         }
