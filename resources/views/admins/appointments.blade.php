@@ -133,7 +133,7 @@
             <a href="{{ route('admins.index') }}" class="text-blue-500 hover:text-blue-700">กลับหน้าหลัก</a>
         </div>
     </div>
-    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
 </html>
