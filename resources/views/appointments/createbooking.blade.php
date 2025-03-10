@@ -65,7 +65,7 @@
 
                 if (selectedDate) {
                     // Set the selected date in the date input
-                    document.getElementById("appointmentDateInput").value = selectedDate + "T09:00";
+                    document.getElementById("appointmentDateInput").value = selectedDate + "T08:00";
                 }
             });
         </script>
