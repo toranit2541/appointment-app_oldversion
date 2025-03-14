@@ -51,8 +51,8 @@
             </div>
 
             <div class="mb-3">
-                <label for="email" class="form-label">อีเมล:</label>
-                <input type="email" name="email" id="email" class="form-control" value="{{ $appointment->email }}" required>
+                <label for="phone" class="form-label">เบอร์โทรศัพท์:</label>
+                <input type="text" name="phone" id="phone" class="form-control" value="{{ $appointment->phone }}" required>
             </div>
 
             <div class="mb-3">

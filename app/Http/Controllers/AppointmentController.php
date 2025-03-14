@@ -33,7 +33,7 @@ class AppointmentController extends Controller
             'last_name' => 'required',
             'id_card' => 'required|unique:appointments,id_card',
             'birthdate' => 'required|date',
-            'email' => 'required|email',
+            'phone' => 'required|phone',
             'appointment_date' => 'required|date',
             
         ]);
@@ -57,7 +57,7 @@ class AppointmentController extends Controller
             'last_name' => $request->last_name,
             'id_card' => $request->id_card,
             'birthdate' => $request->birthdate,
-            'email' => $request->email,
+            'phone' => $request->phone,
             'appointment_date' => $appointmentDate,
             'admin_approve_status' => 'pending', // Default value
         ]);

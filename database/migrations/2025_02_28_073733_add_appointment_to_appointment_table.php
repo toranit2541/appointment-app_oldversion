@@ -20,7 +20,7 @@ class AddAppointmentToAppointmentTable extends Migration
             $table->string('last_name');
             $table->string('id_card', 191)->unique(); // Limit to 191 characters
             $table->date('birthdate')->nullable();
-            $table->string('email');
+            $table->string('phone');
             $table->dateTime('appointment_date');
             $table->string('admin_approve_status')->default('pending');
         });

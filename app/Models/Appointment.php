@@ -14,7 +14,7 @@ class Appointment extends Model
         'last_name',
         'id_card',
         'birthdate',
-        'email',
+        'phone',
         'appointment_date',
         'admin_approve_status'
     ];

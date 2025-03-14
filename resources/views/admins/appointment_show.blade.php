@@ -18,7 +18,7 @@
                 <p><strong>นามสกุล:</strong> {{ $appointment->last_name }}</p>
                 <p><strong>เลขบัตรประชาชน:</strong> {{ $appointment->id_card }}</p>
                 <p><strong>วัน-เดือน-ปี เกิด:</strong> {{ \Carbon\Carbon::parse($appointment->birthdate)->format('d/m/Y') }}</p>
-                <p><strong>อีเมล:</strong> {{ $appointment->email }}</p>
+                <p><strong>เบอร์โทรศัพท์:</strong> {{ $appointment-> phone}}</p>
                 <p><strong>จองวันที่:</strong> {{ \Carbon\Carbon::parse($appointment->appointment_date)->format('d/m/Y H:i') }}</p>
             </div>
         </div>

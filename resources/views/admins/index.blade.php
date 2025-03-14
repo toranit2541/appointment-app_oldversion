@@ -30,7 +30,7 @@
                 <tr class="bg-gray-200">
                     <th class="border border-gray-300 px-4 py-2">ลำดับ</th>
                     <th class="border border-gray-300 px-4 py-2">ชื่อ</th>
-                    <th class="border border-gray-300 px-4 py-2">อีเมล</th>
+                    <th class="border border-gray-300 px-4 py-2">เบอร์โทรศัพท์</th>
                     <th class="border border-gray-300 px-4 py-2">วันที่จอง</th>
                     <th class="border border-gray-300 px-4 py-2">สร้างวันที่</th>
                     <th class="border border-gray-300 px-4 py-2">อื่นๆ</th>
@@ -41,7 +41,7 @@
                     <tr>
                         <td class="border border-gray-300 px-4 py-2">{{ $appointment->id }}</td>
                         <td class="border border-gray-300 px-4 py-2">{{ $appointment->prefix }} {{ $appointment->first_name }} {{ $appointment->last_name }}</td>
-                        <td class="border border-gray-300 px-4 py-2">{{ $appointment->email }}</td>
+                        <td class="border border-gray-300 px-4 py-2">{{ $appointment->phone }}</td>
                         <td class="border border-gray-300 px-4 py-2">{{ \Carbon\Carbon::parse($appointment->appointment_date)->format('Y-m-d H:i') }}</td>
                         <td class="border border-gray-300 px-4 py-2">{{ $appointment->created_at->format('Y-m-d H:i') }}</td>
                         <td class="border border-gray-300 px-4 py-2">

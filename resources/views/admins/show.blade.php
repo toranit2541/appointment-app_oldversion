@@ -12,7 +12,7 @@
         @if(isset($user))
             <p class="mb-2"><strong>ID:</strong> {{ $user->id }}</p>
             <p class="mb-2"><strong>Name:</strong> {{ $user->name }}</p>
-            <p class="mb-4"><strong>Email:</strong> {{ $user->email }}</p>
+            <p class="mb-4"><strong>Phone:</strong> {{ $user->phone }}</p>
         @else
             <p class="text-red-500">User not found.</p>
         @endif

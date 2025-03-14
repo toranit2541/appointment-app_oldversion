@@ -43,8 +43,8 @@
                     <input type="date" name="birthdate" required class="w-full border-gray-300 rounded-lg p-2">
                 </div>
                 <div class='flex flex-col'>
-                    <label class="block text-gray-700">อีเมล</label>
-                    <input type="email" name="email" required class="w-full border-gray-300 rounded-lg p-2">
+                    <label class="block text-gray-700">เบอร์โทรศัพท์</label>
+                    <input type="text" name="text" required class="w-full border-gray-300 rounded-lg p-2">
                 </div>
                 <div class='flex flex-col'>
                     <label class="block text-gray-700">จองวันที่</label>

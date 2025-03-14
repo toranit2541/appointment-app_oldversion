@@ -148,7 +148,7 @@ class AdminController extends Controller
             $handle = fopen('php://output', 'w');
 
             // Add CSV column headers
-            fputcsv($handle, ['ลำดับ', 'คำนำหน้า', 'ชื่อ', 'นามสกุล', 'อีเมล', 'วัน-เดือน-ปี เกิด', 'เลขบัตรประชาชน', 'วันที่จอง', 'สร้างเมื่อ']);
+            fputcsv($handle, ['ลำดับ', 'คำนำหน้า', 'ชื่อ', 'นามสกุล', 'เบอร์โทรศัพท์', 'วัน-เดือน-ปี เกิด', 'เลขบัตรประชาชน', 'วันที่จอง', 'สร้างเมื่อ']);
 
             // Write approved appointments to the CSV file
             foreach ($appointments as $appointment) {
