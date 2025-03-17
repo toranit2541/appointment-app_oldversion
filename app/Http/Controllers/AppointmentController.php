@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Appointment;
+use Carbon\Carbon;
 
 class AppointmentController extends Controller
 {
@@ -35,7 +36,7 @@ class AppointmentController extends Controller
             'birthdate' => 'required|date',
             'phone' => 'required|phone',
             'appointment_date' => 'required|date',
-            
+
         ]);
 
         // Extract hour from the input appointment date
@@ -79,7 +80,7 @@ class AppointmentController extends Controller
         foreach ($appointments as $appointment) {
             $events[] = [
                 // 'title' => $appointment->first_name . ' ' . $appointment->last_name,
-                'start' => $appointment->appointment_date,
+                'start' => Carbon::parse($appointment->appointment_date)->format('Y-m-d H:i:s'), // 24-hour format
             ];
         }
 
