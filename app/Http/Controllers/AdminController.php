@@ -23,7 +23,7 @@ class AdminController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'email' => 'required|email|unique:users,email',
+            'phone' => 'required|phone|unique:users,phone',
         ]);
 
         User::create($request->all());
@@ -41,7 +41,7 @@ class AdminController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'email' => 'required|email|unique:users,email,' . $id,
+            'phone' => 'required|phone|unique:users,phone,' . $id,
         ]);
 
         $user = User::findOrFail($id);
@@ -105,7 +105,7 @@ class AdminController extends Controller
             'last_name' => 'required',
             'id_card' => 'required',
             'birthdate' => 'required|date',
-            'email' => 'required|email',
+            'phone' => 'required|phone',
             'appointment_date' => 'required|date',
         ]);
 
@@ -115,7 +115,7 @@ class AdminController extends Controller
             'last_name' => $request->last_name,
             'id_card' => $request->id_card,
             'birthdate' => $request->birthdate,
-            'email' => $request->email,
+            'phone' => $request->phone,
             'appointment_date' => $request->appointment_date,
         ]);
 
@@ -157,7 +157,7 @@ class AdminController extends Controller
                     $appointment->prefix,
                     $appointment->first_name,
                     $appointment->last_name,
-                    $appointment->email,
+                    $appointment->phone,
                     $appointment->birthdate,
                     $appointment->id_card,
                     $appointment->appointment_date,
