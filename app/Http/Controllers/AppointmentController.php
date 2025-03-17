@@ -80,7 +80,7 @@ class AppointmentController extends Controller
         foreach ($appointments as $appointment) {
             $events[] = [
                 // 'title' => $appointment->first_name . ' ' . $appointment->last_name,
-                'start' => Carbon::parse($appointment->appointment_date)->format('Y-m-d H:i:s'), // 24-hour format
+                'start' => Carbon::parse($appointment->appointment_date)->format('H:i:s'), // 24-hour format
             ];
         }
 
