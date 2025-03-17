@@ -44,7 +44,7 @@
                 </div>
                 <div class='flex flex-col'>
                     <label class="block text-gray-700">เบอร์โทรศัพท์</label>
-                    <input type="text" name="text" required class="w-full border-gray-300 rounded-lg p-2">
+                    <input type="text" name="phone" required class="w-full border-gray-300 rounded-lg p-2">
                 </div>
                 <div class='flex flex-col'>
                     <label class="block text-gray-700">จองวันที่</label>
